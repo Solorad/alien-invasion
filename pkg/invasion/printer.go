@@ -9,7 +9,7 @@ import (
 )
 
 func PrintOutResult(cities map[string]*models.City) {
-	fmt.Println("========== Cities ==========")
+	fmt.Printf("\n\n========== Cities ==========\n")
 	for _, c := range cities {
 		if c.Alive {
 			paths := []string{c.Name}
@@ -34,6 +34,7 @@ func PrintOutResult(cities map[string]*models.City) {
 	}
 }
 
+// PrintAliensPosition is a debug method that is useful for movement monitoring
 func PrintAliensPosition(aliensMap map[string][]*models.Alien) {
 	pos := make(map[string][]string)
 	for cityName, aliens := range aliensMap {

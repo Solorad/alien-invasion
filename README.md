@@ -25,7 +25,8 @@ there are no big parameterized test suites
   > [grounding] Foo has been destroyed by Helvetios and Deneb!
   > 
   > [step-4] Qu-ux has been destroyed by Wasat and Pleione!
-
+- It was decided for simplicity to support only one-worded cities, without spaces. For example `Paris` is ok, 
+when  `San Francisco` is not.
 
 ### Application usage
 **Prerequsites:** `city_map.txt` file in a root folder. You can use one from the root or update it with a new map 
@@ -33,5 +34,16 @@ there are no big parameterized test suites
 To run this application run the next command:
 ```bash
 go build -mod vendor -o madaliens cmd/alien-invasion/main.go
-madaliens 3
+./madaliens 3
+```
+
+### Map generator
+For test purposes I also developed a map generator. To generate a test map you should run
+```bash
+go build -mod vendor -o map-generator cmd/map-generator/main.go
+./map-generator 200
+```
+Output of this utility can be used by our app
+```bash
+./map-generator 200 > city_map.txt
 ```

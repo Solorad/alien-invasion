@@ -37,5 +37,28 @@ func BuildAlienNamesArray(n int) []string {
 			}
 		}
 	}
+	return GetRandomNames(n, names)
+}
+
+func GetRandomNames(n int, source []string) []string {
+	usedNames := make(map[string]struct{})
+	resultNames := make([]string, n)
+	for i := 0; i < n; i++ {
+		rootNameInd := rand.Int31n(int32(len(source)))
+		rootName := source[rootNameInd]
+		if _, ok := usedNames[rootName]; !ok {
+			usedNames[rootName] = struct{}{}
+			resultNames[i] = rootName
+			continue
+		}
+		for k := 2; ; k++ {
+			name := fmt.Sprintf("%s-%d", rootName, k)
+			if _, ok := usedNames[name]; !ok {
+				usedNames[name] = struct{}{}
+				resultNames[i] = name
+				break
+			}
+		}
+	}
 	return resultNames
 }

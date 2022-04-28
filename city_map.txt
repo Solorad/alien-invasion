@@ -1,4 +1,200 @@
-Foo north=Bar west=Baz south=Qu-ux
-Bar south=Foo west=Bee
-Bee east=Bar
-Baz east=Foo
+Nasiriyah
+Southampton east=Haimen south=Wenzhou west=Nasiriyah
+Haimen south=Longhai
+Wenzhou north=Southampton east=Longhai south=Chihuahua
+Longhai north=Haimen west=Wenzhou
+Laixi east=Imus
+Imus east=Chihuahua west=Laixi
+Chihuahua north=Wenzhou south=Tongling west=Imus
+Tongling north=Chihuahua east=Dnipro
+Dnipro west=Tongling
+Longhai-2
+Perm east=Abomey-Calavi
+Abomey-Calavi west=Perm
+Uvira east=Jaipur south=Zhoukou
+Jaipur north=Perm south=Barnaul west=Uvira
+Nagoya
+Zhoukou north=Uvira east=Barnaul
+Barnaul north=Jaipur south=Saratov
+Saratov north=Barnaul east=Malegaon
+Malegaon west=Saratov
+Ad-Dammam south=Irkutsk
+Dhanbad
+Irkutsk north=Ad-Dammam south=Jiangyin
+Zagreb south=Banjarmasin
+Jiangyin north=Irkutsk south=Shizuishan
+Banjarmasin north=Zagreb east=Zhangjiakou
+Zhangjiakou south=Tiruchirappalli west=Banjarmasin
+Shizuishan north=Jiangyin south=Thrissur
+Tiruchirappalli north=Zhangjiakou south=Zhangjiakou-2
+Thrissur north=Shizuishan
+Anshan east=Zhangjiakou-2
+Zhangjiakou-2 north=Tiruchirappalli south=Kolwezi west=Anshan
+Poznan
+Kolwezi north=Zhangjiakou-2 south=Verona
+Zhucheng
+Verona north=Kolwezi
+Guiping north=Zhucheng
+Ibague
+Havana east=Jinjiang
+Jinjiang east=Austin west=Havana
+Austin south=Enshi west=Jinjiang
+Helsinki
+Jammu north=Jinjiang east=Enshi
+Enshi north=Austin west=Jammu
+Zaporizhzhya east=Tyumen south=Zhucheng-2
+Tyumen east=Zhuhai south=Pingdu west=Zaporizhzhya
+Zhuhai east=Bucharest south=Bellary west=Tyumen
+Bucharest west=Zhuhai
+Zhucheng-2 north=Zaporizhzhya east=Pingdu south=Padova
+Pingdu north=Tyumen east=Bellary west=Zhucheng-2
+Bellary north=Zhuhai south=Alexandria
+Padova north=Zhucheng-2
+Alexandria north=Bellary
+Milan south=Leshan
+Changde east=Leshan
+Leshan north=Milan south=Reynosa west=Changde
+Begusarai south=Natal
+Reynosa north=Leshan east=Rajahmundry
+Rajahmundry east=Natal
+Natal north=Begusarai south=Xiangyang west=Rajahmundry
+Natal-2
+Xiangyang north=Natal south=Shuozhou
+Purnia south=Zhangjiagang
+Shuozhou north=Xiangyang west=Purnia
+Taibei east=Tamale south=Rabat
+Tamale east=Zhangjiagang south=Van west=Taibei
+Zhangjiagang north=Purnia west=Tamale
+Rabat north=Taibei east=Van
+Van north=Tamale west=Rabat
+Auckland north=Van east=Anyang south=Kitchener
+Anyang south=Manaus west=Auckland
+Chiclayo west=Anyang
+Valencia east=Kitchener south=Gaoyou
+Kitchener north=Auckland east=Manaus west=Valencia
+Manaus north=Anyang south=Denpasar west=Kitchener
+Gaoyou north=Valencia
+Denpasar north=Manaus east=Sofia
+Sofia south=Novokuznetsk west=Denpasar
+Accra
+Novokuznetsk north=Sofia south=Astrakhan
+Louisville
+Rajkot east=Astrakhan south=Incheon
+Astrakhan north=Novokuznetsk west=Rajkot
+Jhansi north=Louisville
+Banjarmasin-2 west=Jhansi
+Incheon south=Bucaramanga west=Banjarmasin-2
+Bucaramanga east=Tijuana
+Tijuana south=Banghazi west=Bucaramanga
+Oran
+Banghazi north=Tijuana south=Maracay
+Nashville
+Haimen-2 east=Maracay
+Maracay north=Banghazi west=Haimen-2
+Ardabil south=Tunis
+Tunis north=Ardabil south=Gaza
+Fukuoka south=Krasnodar
+Gaza north=Tunis south=Sukkur
+Krasnodar north=Fukuoka south=Salta
+Tamale-2 east=Sukkur
+Sukkur north=Gaza west=Tamale-2
+Haining east=Salta south=Monterrey west=Sukkur
+Salta north=Krasnodar west=Haining
+Monterrey north=Haining
+Baoding east=Varanasi south=Uige
+Varanasi south=Asansol west=Baoding
+Hengshui east=Uige south=Sapporo
+Uige north=Baoding east=Asansol west=Hengshui
+Asansol north=Varanasi east=Semarang west=Uige
+Semarang south=Quzhou west=Asansol
+Sapporo north=Hengshui east=Tongling-2
+Tongling-2 north=Uige south=Damascus west=Sapporo
+Quzhou north=Semarang south=Tongling-3
+Damascus north=Tongling-2 east=Toronto
+Toronto south=Lodz west=Damascus
+Tongling-3 north=Quzhou south=Cixi west=Toronto
+Lodz north=Toronto east=Cixi
+Cixi north=Tongling-3 south=Siping west=Lodz
+Monrovia east=Arequipa south=As-Suways
+Arequipa south=Valencia-2 west=Monrovia
+Siping north=Cixi south=Ado-Ekiti
+As-Suways north=Monrovia east=Valencia-2
+Valencia-2 north=Arequipa south=Milan-2 west=As-Suways
+Ado-Ekiti north=Siping south=Wenzhou-2
+Milan-2
+Wenzhou-2 north=Ado-Ekiti
+Moscow south=Sendai
+Sendai north=Moscow south=Zagreb-2
+Zhongxiang east=Detroit south=Antipolo
+Detroit west=Zhongxiang
+Zagreb-2 north=Sendai south=Culiacan
+Antipolo north=Zhongxiang south=Boston
+Culiacan north=Zagreb-2 south=Ibague-2
+Boston north=Antipolo
+Hebi
+Ibague-2 north=Culiacan west=Hebi
+Depok south=Blantyre-Limbe
+Liege east=Blantyre-Limbe south=Lome
+Blantyre-Limbe north=Depok east=Jiujiang west=Liege
+Jiujiang east=Ufa south=Foshan west=Blantyre-Limbe
+Ufa west=Jiujiang
+Lome north=Liege
+Foshan north=Jiujiang south=Sukkur-2
+Sukkur-2 north=Foshan east=Bouake south=Fortaleza
+Bouake south=Tirupati
+Begusarai-2 east=Shaoxing
+Shaoxing east=Fortaleza south=Dnipro-2 west=Begusarai-2
+Fortaleza north=Sukkur-2 east=Tirupati west=Shaoxing
+Tirupati north=Bouake west=Fortaleza
+Dnipro-2 north=Shaoxing
+Sanaa
+Winnipeg
+Liuzhou
+Bhopal
+Nottingham south=Krasnodar-2
+Yan'an south=Louisville-2
+Krasnodar-2 north=Nottingham south=Vellore
+Louisville-2 north=Yan'an
+Vellore north=Krasnodar-2 east=Kitwe south=Dandong
+Kitwe south=Liaocheng west=Vellore
+Najaf east=Dandong
+Dandong north=Vellore east=Liaocheng south=Medina west=Najaf
+Liaocheng north=Kitwe
+Medina north=Dandong
+Vilnius
+Samarinda south=Bobo-Dioulasso
+Hebi-2 east=Leiyang south=Jilin
+Leiyang south=Namangan west=Hebi-2
+Bobo-Dioulasso north=Samarinda
+Jilin north=Hebi-2 east=Namangan
+Namangan north=Leiyang south=Duisburg west=Jilin
+Queretaro
+Duisburg north=Namangan south=Ambon
+Gombe south=Tashkent
+Urumqi east=Ambon
+Ambon north=Duisburg west=Urumqi
+Tashkent north=Gombe east=Yongcheng south=Jiangmen
+Yongcheng south=Changwon west=Tashkent
+Jiangmen north=Tashkent east=Changwon
+Changwon north=Yongcheng east=Melbourne south=Yazd west=Jiangmen
+Melbourne east=Muzaffarpur west=Changwon
+Muzaffarpur west=Melbourne
+Yazd north=Changwon south=Shantou
+Duisburg-2 east=Shantou south=Taixing
+Shantou north=Yazd west=Duisburg-2
+Yueqing
+Taixing north=Duisburg-2 south=Coimbatore
+Warri north=Yueqing
+Coimbatore
+Haerbin east=Sanliurfa
+Sanliurfa west=Haerbin
+Suzhou
+Medina-2 south=Tiruchirappalli-2
+Aguascalientes south=Lome-2
+Denpasar-2 east=Tiruchirappalli-2
+Tiruchirappalli-2 north=Medina-2 south=Riyadh west=Denpasar-2
+Lome-2 north=Aguascalientes
+Zhangzhou north=Denpasar-2 east=Riyadh
+Riyadh north=Tiruchirappalli-2 west=Zhangzhou
+Sapporo-2 east=Lille
+Lille west=Sapporo-2

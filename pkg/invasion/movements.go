@@ -34,11 +34,11 @@ func GroundAliens(alienNames []string, cities map[string]*models.City) map[strin
 
 // CheckCitiesAndAliens function validates state after each iteration and initial ground.
 // It returns a map with all alive cities with aliens
-func CheckCitiesAndAliens(aliensMap map[string][]*models.Alien) map[string][]*models.Alien {
+func CheckCitiesAndAliens(stepName string, aliensMap map[string][]*models.Alien) map[string][]*models.Alien {
 	result := make(map[string][]*models.Alien, len(aliensMap))
 	for name, v := range aliensMap {
 		if len(v) > 1 {
-			CityWasDestroyedMessage(name, v)
+			CityWasDestroyedMessage(stepName, name, v)
 			v[0].Position.Alive = false
 		} else {
 			result[name] = v
@@ -75,14 +75,13 @@ func MoveAliens(aliensMap map[string][]*models.Alien) map[string][]*models.Alien
 			result[cityName] = append(result[cityName], alien)
 		}
 	}
-	// after everyone made a move - check city map
-	return CheckCitiesAndAliens(result)
+	return result
 }
 
-func CityWasDestroyedMessage(cityName string, aliens []*models.Alien) {
+func CityWasDestroyedMessage(stepName, cityName string, aliens []*models.Alien) {
 	var alienNames []string
 	for _, v := range aliens {
 		alienNames = append(alienNames, v.Name)
 	}
-	fmt.Printf("%s has been destroyed by %s!\n", cityName, strings.Join(alienNames, " and "))
+	fmt.Printf("[%s] %s has been destroyed by %s!\n", stepName, cityName, strings.Join(alienNames, " and "))
 }

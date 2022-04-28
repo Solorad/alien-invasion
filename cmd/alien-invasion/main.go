@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"math/rand"
 	"time"
@@ -31,13 +32,13 @@ func main() {
 	// 3. put aliens on a map.
 	aliensMap := invasion.GroundAliens(aliens, cities)
 	// 3.a Check cities/aliens who might be destroyed
-	aliensMap = invasion.CheckCitiesAndAliens(aliensMap)
-	invasion.PrintAliensPosition(aliensMap)
+	aliensMap = invasion.CheckCitiesAndAliens("grounding", aliensMap)
 
 	// 4. make 10.000 cycles of game
 	for i := 0; i < maxCycles && len(aliensMap) > 0; i++ {
 		aliensMap = invasion.MoveAliens(aliensMap)
-		invasion.PrintAliensPosition(aliensMap)
+		// after everyone made a move - check city map
+		aliensMap = invasion.CheckCitiesAndAliens(fmt.Sprintf("step-%d", i+1), aliensMap)
 	}
 
 	// 5. print out city map

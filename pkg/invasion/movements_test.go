@@ -9,7 +9,7 @@ import (
 
 func TestCheckCitiesAndAliens(t *testing.T) {
 	res := make(map[string][]*models.Alien)
-	res = CheckCitiesAndAliens(res)
+	res = CheckCitiesAndAliens("step-1", res)
 	assert.Equal(t, 0, len(res))
 
 	res["City1"] = []*models.Alien{
@@ -22,7 +22,7 @@ func TestCheckCitiesAndAliens(t *testing.T) {
 			},
 		},
 	}
-	res = CheckCitiesAndAliens(res)
+	res = CheckCitiesAndAliens("step-1", res)
 	assert.Equal(t, 1, len(res))
 	res["City2"] = []*models.Alien{
 		{
@@ -34,7 +34,7 @@ func TestCheckCitiesAndAliens(t *testing.T) {
 			},
 		},
 	}
-	res = CheckCitiesAndAliens(res)
+	res = CheckCitiesAndAliens("step-1", res)
 	assert.Equal(t, 2, len(res))
 	res["City1"] = append(res["City1"], &models.Alien{
 		Name: "alien-3",
@@ -44,7 +44,7 @@ func TestCheckCitiesAndAliens(t *testing.T) {
 			Neighbours: [4]*models.City{},
 		},
 	})
-	res = CheckCitiesAndAliens(res)
+	res = CheckCitiesAndAliens("step-1", res)
 	assert.Equal(t, 1, len(res))
 	assert.NotNil(t, res["City2"])
 }
